@@ -25,8 +25,8 @@ author:
   name             : "William D. Miles"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student at Duke University"
-  location         : "Durham, NC"
-  employer         : "Fuqua School of Business, Duke University"
+  location         : "Durham, NC, U.S."
+  employer         : "Fuqua School of Business,\nDuke University"
   uri              : # URL
   email            : "will.miles@duke.edu" 
 
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : william-miles-249764179
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
