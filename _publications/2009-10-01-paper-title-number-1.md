@@ -1,9 +1,9 @@
 ---
-title: "If you only had one shot: Strategic experimentation in high-technology industries"
+title: "Paper Title Number 1"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'Several different approaches must be tried to solve important, complex problems, but in some problem domains e.g., Alzheimer's Disease, we see substantial herding in the choice of approach. In this paper, we develop a simple model to argue that a market consisting of a handful of large scale experimenters---firms which launch multiple experiments---produces a greater variety of approaches at the market level compared to a market consisting of several small-scale experimenters. This result is contrary to conventional wisdom which suggests that a greater variety of approaches would spawn from a market of many individual minds.'
+excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2009-10-01
 venue: 'Journal 1'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
