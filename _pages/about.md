@@ -9,5 +9,5 @@ redirect_from:
 
 Hello. I am William Miles, a Ph.D. student in the Strategy group at the Duke University's Fuqua School of Business. 
 
-My research
+My research interests lie in understanding how competition and market structure impact the direction and nature of technological innovations.
 
