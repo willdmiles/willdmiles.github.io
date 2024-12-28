@@ -14,11 +14,12 @@
     {% endif %}
   </div> -->
 
+  <!-- I EDITED THIS TO MAKE THE PROFILE PICTURE GO IN A SQAURE BOX RATHER THAN OVAL  -->
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-      <img src="{{ author.avatar }}" alt="{{ author.name }}" style="border-radius: 0; width: 100px; height: 100px; object-fit: cover;">
+      <img src="{{ author.avatar }}" alt="{{ author.name }}" style="border-radius: 0; width: 200px; height: 200px; object-fit: cover;">
     {% else %}
-      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="border-radius: 0; width: 100px; height: 100px; object-fit: cover;">
+      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="border-radius: 0; width: 200px; height: 200px; object-fit: cover;">
     {% endif %}
   </div>
 
