@@ -5,28 +5,12 @@ permalink: /publications/
 author_profile: true
 ---
 <style>
-  details {
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-  }
-
-  summary {
-    cursor: pointer;
-    color: #002147;
-    font-style: italic;
-  }
-
-  details p {
-    margin-top: 0.75em;
-  }
-
   .paper-links {
     margin-top: 0.9em;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.9rem;
     align-items: center;
-    overflow-x: auto;
   }
 
   .paper-links a {
@@ -36,14 +20,41 @@ author_profile: true
     white-space: nowrap;
   }
 
-  .paper-links a::before {
+  .paper-links details.abstract-link {
+    margin: 0;
+  }
+
+  .paper-links details.abstract-link[open] {
+    flex-basis: 100%;
+  }
+
+  .paper-links summary {
+    cursor: pointer;
+    color: #4f5d73;
+    font-style: italic;
+    white-space: nowrap;
+    list-style: none;
+  }
+
+  .paper-links a::before,
+  .paper-links summary::before {
     content: "\2192";
     margin-right: 0.3rem;
   }
 
-  .paper-links a:hover {
+  .paper-links summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .paper-links a:hover,
+  .paper-links summary:hover {
     color: #002147;
     text-decoration: underline;
+  }
+
+  .paper-links details.abstract-link p {
+    margin-top: 0.75em;
+    margin-bottom: 0;
   }
 </style>
 
@@ -56,10 +67,11 @@ author_profile: true
 <i>With Ashish Arora and Sharique Hasan</i><br>
 
 <i>Major Revision @ <b>Management Science</b></i><br>
-<details>
-  <summary>Abstract</summary>
-  <p>
-    Solving complex problems --- in medicine, engineering, and other technological domains --- often requires exploring multiple 
+<div class="paper-links">
+  <details class="abstract-link">
+    <summary>Abstract</summary>
+    <p>
+      Solving complex problems --- in medicine, engineering, and other technological domains --- often requires exploring multiple 
 approaches, particularly when significant uncertainty exists about which one will lead to success. 
 Conventional wisdom assumes that having many experimenters independently decide which approaches to pursue increases diversity and, 
 thus also, the chances of finding a solution. However, if experimenters herd toward the most promising approach, 
@@ -74,9 +86,8 @@ In turn, a one-standard deviation increase from the mean in target diversity boo
 Phase 1 clinical trials by 25.9 percentage points. 
 Our findings highlight the need for technology policies that optimize experiment allocation across firms to maximize approach diversity and 
 market-level success.
-  </p>
-</details>
-<div class="paper-links">
+    </p>
+  </details>
   <a href="https://www.nber.org/papers/w33682?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg3" target="_blank" rel="noopener noreferrer">NBER #33682</a>
 </div>
 
@@ -87,9 +98,11 @@ market-level success.
 <i>With Ronnie Chatterji, Sharique Hasan, and Dror Shvadron</i><br>
 <i>Conditional Accept @ <b>Management Science</b></i><br><br>
 
-<i>Abstract:</i> This paper examines how new entrants influenced content strategies in the U.S. online political news business from 2014 to 2021. Using a novel measure of article opinionation that captures the extent to which an article displays editorializing and persuasive language, we provide correlational evidence that new entrants produce articles that are more opinionated than those of incumbents, even when reporting on the same event. We then show that there is an economic rationale for this content strategy: opinionated articles receive more engagement on Twitter, and this engagement translates to increased webpage visits, crucial for advertising revenue. Consistent with these incentives, we provide evidence that news providers increase the average opinion level in their articles in response to competition and advertiser pressure. These shifts are accompanied by a possibly unintended consequence: opinionated content is associated with greater anger and hate speech in social media engagement. 
-
 <div class="paper-links">
+  <details class="abstract-link">
+    <summary>Abstract</summary>
+    <p>This paper examines how new entrants influenced content strategies in the U.S. online political news business from 2014 to 2021. Using a novel measure of article opinionation that captures the extent to which an article displays editorializing and persuasive language, we provide correlational evidence that new entrants produce articles that are more opinionated than those of incumbents, even when reporting on the same event. We then show that there is an economic rationale for this content strategy: opinionated articles receive more engagement on Twitter, and this engagement translates to increased webpage visits, crucial for advertising revenue. Consistent with these incentives, we provide evidence that news providers increase the average opinion level in their articles in response to competition and advertiser pressure. These shifts are accompanied by a possibly unintended consequence: opinionated content is associated with greater anger and hate speech in social media engagement.</p>
+  </details>
   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5121585" target="_blank" rel="noopener noreferrer">SSRN</a>
 </div>
 
@@ -100,15 +113,11 @@ market-level success.
 
 <i>R&R @ <b>Strategic Management Journal</b></i><br><br>
 
-
-<i>Abstract:</i>  Using detailed product- and invention-level data from the pharmaceutical industry, 
-we demonstrate that firms with particularly high-selling “blockbuster” products concentrate their development efforts 
-on new products that both target the same customer segments and are more likely to be technically similar to existing blockbuster products. 
-This behavior, driven by an expectation of the stickiness of demand for existing product offerings, limits firms' incentives to invest in 
-entirely new products targeting different customer segments. Our findings offer insights into how blockbuster products shape firms' customer 
-segment and innovation choices, with implications for understanding the dynamics of technological change in R&D-intensive industries.
-
 <div class="paper-links">
+  <details class="abstract-link">
+    <summary>Abstract</summary>
+    <p>Using detailed product- and invention-level data from the pharmaceutical industry, we demonstrate that firms with particularly high-selling “blockbuster” products concentrate their development efforts on new products that both target the same customer segments and are more likely to be technically similar to existing blockbuster products. This behavior, driven by an expectation of the stickiness of demand for existing product offerings, limits firms' incentives to invest in entirely new products targeting different customer segments. Our findings offer insights into how blockbuster products shape firms' customer segment and innovation choices, with implications for understanding the dynamics of technological change in R&D-intensive industries.</p>
+  </details>
   <a href="https://www.nber.org/papers/w33957" target="_blank" rel="noopener noreferrer">NBER #33957</a>
   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5086278" target="_blank" rel="noopener noreferrer">SSRN</a>
 </div>
@@ -122,9 +131,11 @@ segment and innovation choices, with implications for understanding the dynamics
 <i>With Alessandro Piazza</i><br>
 <i>Forthcoming @ <b>Academy of Management Journal</b></i><br><br>
 
-<i>Abstract:</i> We examine how entrepreneurs transition to angel investing through the lens of generalized reciprocity and embeddedness. Using a multimethod approach combining archival analysis with three experiments, we reveal how psychological and social mechanisms shape this transition. We find that entrepreneurs who have received angel funding are more likely to become angel investors themselves, particularly when they share educational, professional, or geographic ties with their initial investors. While angel investors, like all investors, seek financial returns, we theorize that choosing angel investing over alternative investment vehicles reflects prosocial motivations rooted in reciprocity. Our mediation analyses demonstrate that gratitude, rather than reputation concerns, drives this initial transition. Furthermore, entrepreneurs who received embedded funding preferentially direct their investments toward entrepreneurs with whom they share embedded ties. This reveals a two-part process: emotional mechanisms drive the decision to become an angel investor, while structural embeddedness guides investment targeting. These findings integrate psychological accounts of generalized reciprocity with sociological perspectives on embeddedness, linking individual-level and structural explanations of prosocial behavior in economic contexts. Our study highlights how angel investing perpetuates itself through self-reinforcing cycles that create both opportunities and constraints for ecosystem development.
-
 <div class="paper-links">
+  <details class="abstract-link">
+    <summary>Abstract</summary>
+    <p>We examine how entrepreneurs transition to angel investing through the lens of generalized reciprocity and embeddedness. Using a multimethod approach combining archival analysis with three experiments, we reveal how psychological and social mechanisms shape this transition. We find that entrepreneurs who have received angel funding are more likely to become angel investors themselves, particularly when they share educational, professional, or geographic ties with their initial investors. While angel investors, like all investors, seek financial returns, we theorize that choosing angel investing over alternative investment vehicles reflects prosocial motivations rooted in reciprocity. Our mediation analyses demonstrate that gratitude, rather than reputation concerns, drives this initial transition. Furthermore, entrepreneurs who received embedded funding preferentially direct their investments toward entrepreneurs with whom they share embedded ties. This reveals a two-part process: emotional mechanisms drive the decision to become an angel investor, while structural embeddedness guides investment targeting. These findings integrate psychological accounts of generalized reciprocity with sociological perspectives on embeddedness, linking individual-level and structural explanations of prosocial behavior in economic contexts. Our study highlights how angel investing perpetuates itself through self-reinforcing cycles that create both opportunities and constraints for ecosystem development.</p>
+  </details>
   <a href="https://osf.io/preprints/socarxiv/e6p4s_v1" target="_blank" rel="noopener noreferrer">OSF Preprint</a>
 </div>
 
