@@ -5,16 +5,91 @@ permalink: /publications/
 author_profile: true
 ---
 <style>
+  .research-page {
+    color: var(--site-ink);
+  }
+
+  .research-intro {
+    margin: 0 0 2.5rem;
+    padding: 1.75rem 1.8rem;
+    background: linear-gradient(135deg, rgba(216, 238, 241, 0.7), rgba(247, 245, 239, 0.95));
+    border: 1px solid var(--site-line);
+    border-radius: 20px;
+    box-shadow: 12px 12px 0 rgba(47, 59, 79, 0.06);
+  }
+
+  .research-intro p {
+    margin: 0;
+    max-width: 42rem;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .research-section {
+    margin-top: 2.75rem;
+  }
+
+  .research-section h2 {
+    margin-bottom: 1rem;
+    color: var(--site-ink);
+    font-size: 1.7rem;
+  }
+
+  .research-grid {
+    display: grid;
+    gap: 1.4rem;
+  }
+
+  .paper-card {
+    padding: 1.45rem 1.5rem 1.3rem;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid var(--site-line);
+    border-left: 8px solid var(--site-blue);
+    border-radius: 18px;
+    box-shadow: 10px 10px 0 rgba(47, 59, 79, 0.05);
+  }
+
+  .paper-card.publication {
+    border-left-color: var(--site-coral);
+  }
+
+  .paper-title {
+    margin: 0 0 0.35rem;
+    color: var(--site-ink);
+    font-size: 1.34rem;
+    line-height: 1.3;
+  }
+
+  .paper-authors {
+    margin: 0 0 0.45rem;
+    color: var(--site-blue);
+    font-style: italic;
+  }
+
+  .paper-status {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.32rem 0.72rem;
+    color: var(--site-ink);
+    background: var(--site-mist);
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+
+  .paper-card.publication .paper-status {
+    background: rgba(242, 106, 69, 0.14);
+  }
+
   .paper-links {
-    margin-top: 0.9em;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.9rem;
-    align-items: center;
+    gap: 0.95rem;
+    align-items: flex-start;
+    margin-top: 0.2rem;
   }
 
   .paper-links a {
-    color: #4f5d73;
+    color: var(--site-blue);
     font-style: italic;
     text-decoration: none;
     white-space: nowrap;
@@ -30,16 +105,17 @@ author_profile: true
 
   .paper-links summary {
     cursor: pointer;
-    color: #4f5d73;
+    color: var(--site-blue);
     font-style: italic;
-    white-space: nowrap;
     list-style: none;
+    white-space: nowrap;
   }
 
   .paper-links a::before,
   .paper-links summary::before {
     content: "\2192";
-    margin-right: 0.3rem;
+    margin-right: 0.32rem;
+    color: var(--site-coral);
   }
 
   .paper-links summary::-webkit-details-marker {
@@ -48,122 +124,97 @@ author_profile: true
 
   .paper-links a:hover,
   .paper-links summary:hover {
-    color: #002147;
+    color: var(--site-ink);
     text-decoration: underline;
   }
 
   .paper-links details.abstract-link p {
-    margin-top: 0.75em;
-    margin-bottom: 0;
+    margin: 0.9rem 0 0;
+    padding: 1rem 1.05rem;
+    color: rgba(47, 59, 79, 0.92);
+    background: rgba(216, 238, 241, 0.45);
+    border-radius: 14px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 767px) {
+    .research-intro,
+    .paper-card {
+      padding: 1.2rem;
+      box-shadow: 6px 6px 0 rgba(47, 59, 79, 0.05);
+    }
+
+    .paper-title {
+      font-size: 1.2rem;
+    }
   }
 </style>
 
+<div class="research-page">
+  <div class="research-intro">
+    <p>I study how incentives, competition, and market structure shape experimentation and the direction of innovation. My work focuses especially on how organizations search, learn, and allocate effort under uncertainty.</p>
+  </div>
 
+  <section class="research-section">
+    <h2>Working Papers</h2>
+    <div class="research-grid">
+      <article class="paper-card">
+        <h3 class="paper-title">If you had only one shot: Scale and herding in innovation experiments</h3>
+        <p class="paper-authors">With Ashish Arora and Sharique Hasan</p>
+        <div class="paper-status">Major Revision @ <strong>Management Science</strong></div>
+        <div class="paper-links">
+          <details class="abstract-link">
+            <summary>Abstract</summary>
+            <p>Solving complex problems in medicine, engineering, and other technological domains often requires exploring multiple approaches, particularly when significant uncertainty exists about which one will lead to success. Conventional wisdom assumes that having many experimenters independently decide which approaches to pursue increases diversity and thus also the chances of finding a solution. However, if experimenters herd toward the most promising approach, this convergence may reduce diversity and thus the likelihood of solving the problem. In this paper, we develop a simple model to show that, holding the total number of experiments constant, markets dominated by a few large-scale experimenters, firms conducting multiple experiments, explore more diverse approaches than markets with many single-shot experimenters. Single-shot experimenters tend to converge on the most promising approach, while multi-experimenters are more likely to diversify to avoid the correlation inherent in pursuing multiple experiments within the same approach. We test our model's predictions using data from pharmaceutical R&amp;D. Our analysis shows that increasing the average number of experiments per firm by one unit raises target diversity by over three standard deviations. In turn, a one-standard deviation increase from the mean in target diversity boosts the likelihood of at least one experiment reaching Phase 1 clinical trials by 25.9 percentage points. Our findings highlight the need for technology policies that optimize experiment allocation across firms to maximize approach diversity and market-level success.</p>
+          </details>
+          <a href="https://www.nber.org/papers/w33682?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg3" target="_blank" rel="noopener noreferrer">NBER #33682</a>
+        </div>
+      </article>
 
-<h2 style="color: #002147;">Working Papers</h2>
+      <article class="paper-card">
+        <h3 class="paper-title">Opinion Trumps Fact: Entrepreneurship and Competition in Political News</h3>
+        <p class="paper-authors">With Ronnie Chatterji, Sharique Hasan, and Dror Shvadron</p>
+        <div class="paper-status">Conditional Accept @ <strong>Management Science</strong></div>
+        <div class="paper-links">
+          <details class="abstract-link">
+            <summary>Abstract</summary>
+            <p>This paper examines how new entrants influenced content strategies in the U.S. online political news business from 2014 to 2021. Using a novel measure of article opinionation that captures the extent to which an article displays editorializing and persuasive language, we provide correlational evidence that new entrants produce articles that are more opinionated than those of incumbents, even when reporting on the same event. We then show that there is an economic rationale for this content strategy: opinionated articles receive more engagement on Twitter, and this engagement translates to increased webpage visits, crucial for advertising revenue. Consistent with these incentives, we provide evidence that news providers increase the average opinion level in their articles in response to competition and advertiser pressure. These shifts are accompanied by a possibly unintended consequence: opinionated content is associated with greater anger and hate speech in social media engagement.</p>
+          </details>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5121585" target="_blank" rel="noopener noreferrer">SSRN</a>
+        </div>
+      </article>
 
-<b>If you had only one shot: Scale and herding in innovation experiments</b><br>
+      <article class="paper-card">
+        <h3 class="paper-title">Blockbusters, Sequels, and the Nature of Innovation</h3>
+        <p class="paper-authors">With Wesley M. Cohen, Matthew J. Higgins, and Yoko Shibuya</p>
+        <div class="paper-status">R&amp;R @ <strong>Strategic Management Journal</strong></div>
+        <div class="paper-links">
+          <details class="abstract-link">
+            <summary>Abstract</summary>
+            <p>Using detailed product- and invention-level data from the pharmaceutical industry, we demonstrate that firms with particularly high-selling blockbuster products concentrate their development efforts on new products that both target the same customer segments and are more likely to be technically similar to existing blockbuster products. This behavior, driven by an expectation of the stickiness of demand for existing product offerings, limits firms' incentives to invest in entirely new products targeting different customer segments. Our findings offer insights into how blockbuster products shape firms' customer segment and innovation choices, with implications for understanding the dynamics of technological change in R&amp;D-intensive industries.</p>
+          </details>
+          <a href="https://www.nber.org/papers/w33957" target="_blank" rel="noopener noreferrer">NBER #33957</a>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5086278" target="_blank" rel="noopener noreferrer">SSRN</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<i>With Ashish Arora and Sharique Hasan</i><br>
-
-<i>Major Revision @ <b>Management Science</b></i><br>
-<div class="paper-links">
-  <details class="abstract-link">
-    <summary>Abstract</summary>
-    <p>
-      Solving complex problems --- in medicine, engineering, and other technological domains --- often requires exploring multiple 
-approaches, particularly when significant uncertainty exists about which one will lead to success. 
-Conventional wisdom assumes that having many experimenters independently decide which approaches to pursue increases diversity and, 
-thus also, the chances of finding a solution. However, if experimenters herd toward the most promising approach, 
-this convergence may reduce diversity and thus the likelihood of solving the problem. 
-In this paper, we develop a simple model to show that, holding the total number of experiments constant, 
-markets dominated by a few large-scale experimenters---firms conducting multiple experiments---explore more diverse approaches than 
-markets with many single-shot experimenters. Single-shot experimenters tend to converge on the most promising approach, 
-while multi-experimenters are more likely to diversify to avoid the correlation inherent in pursuing multiple experiments within the same approach. 
-We test our model's predictions using data from pharmaceutical R&D. 
-Our analysis shows that increasing the average number of experiments per firm by one unit raises target diversity by over three standard deviations. 
-In turn, a one-standard deviation increase from the mean in target diversity boosts the likelihood of at least one experiment reaching 
-Phase 1 clinical trials by 25.9 percentage points. 
-Our findings highlight the need for technology policies that optimize experiment allocation across firms to maximize approach diversity and 
-market-level success.
-    </p>
-  </details>
-  <a href="https://www.nber.org/papers/w33682?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg3" target="_blank" rel="noopener noreferrer">NBER #33682</a>
+  <section class="research-section">
+    <h2>Publications</h2>
+    <div class="research-grid">
+      <article class="paper-card publication">
+        <h3 class="paper-title">From Founders to Funders: Generalized Reciprocity and Embeddedness in Founders’ Transition to Angel Investing</h3>
+        <p class="paper-authors">With Alessandro Piazza</p>
+        <div class="paper-status">Forthcoming @ <strong>Academy of Management Journal</strong></div>
+        <div class="paper-links">
+          <details class="abstract-link">
+            <summary>Abstract</summary>
+            <p>We examine how entrepreneurs transition to angel investing through the lens of generalized reciprocity and embeddedness. Using a multimethod approach combining archival analysis with three experiments, we reveal how psychological and social mechanisms shape this transition. We find that entrepreneurs who have received angel funding are more likely to become angel investors themselves, particularly when they share educational, professional, or geographic ties with their initial investors. While angel investors, like all investors, seek financial returns, we theorize that choosing angel investing over alternative investment vehicles reflects prosocial motivations rooted in reciprocity. Our mediation analyses demonstrate that gratitude, rather than reputation concerns, drives this initial transition. Furthermore, entrepreneurs who received embedded funding preferentially direct their investments toward entrepreneurs with whom they share embedded ties. This reveals a two-part process: emotional mechanisms drive the decision to become an angel investor, while structural embeddedness guides investment targeting. These findings integrate psychological accounts of generalized reciprocity with sociological perspectives on embeddedness, linking individual-level and structural explanations of prosocial behavior in economic contexts. Our study highlights how angel investing perpetuates itself through self-reinforcing cycles that create both opportunities and constraints for ecosystem development.</p>
+          </details>
+          <a href="https://osf.io/preprints/socarxiv/e6p4s_v1" target="_blank" rel="noopener noreferrer">OSF Preprint</a>
+        </div>
+      </article>
+    </div>
+  </section>
 </div>
-
-
-<br><br>
-
-<b>Opinion Trumps Fact: Entrepreneurship and Competition in Political News</b><br>
-<i>With Ronnie Chatterji, Sharique Hasan, and Dror Shvadron</i><br>
-<i>Conditional Accept @ <b>Management Science</b></i><br><br>
-
-<div class="paper-links">
-  <details class="abstract-link">
-    <summary>Abstract</summary>
-    <p>This paper examines how new entrants influenced content strategies in the U.S. online political news business from 2014 to 2021. Using a novel measure of article opinionation that captures the extent to which an article displays editorializing and persuasive language, we provide correlational evidence that new entrants produce articles that are more opinionated than those of incumbents, even when reporting on the same event. We then show that there is an economic rationale for this content strategy: opinionated articles receive more engagement on Twitter, and this engagement translates to increased webpage visits, crucial for advertising revenue. Consistent with these incentives, we provide evidence that news providers increase the average opinion level in their articles in response to competition and advertiser pressure. These shifts are accompanied by a possibly unintended consequence: opinionated content is associated with greater anger and hate speech in social media engagement.</p>
-  </details>
-  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5121585" target="_blank" rel="noopener noreferrer">SSRN</a>
-</div>
-
-<br><br>
-
-<b>Blockbusters, Sequels, and the Nature of Innovation</b><br>
-<i>With Wesley M. Cohen, Matthew J. Higgins, and Yoko Shibuya</i><br>
-
-<i>R&R @ <b>Strategic Management Journal</b></i><br><br>
-
-<div class="paper-links">
-  <details class="abstract-link">
-    <summary>Abstract</summary>
-    <p>Using detailed product- and invention-level data from the pharmaceutical industry, we demonstrate that firms with particularly high-selling “blockbuster” products concentrate their development efforts on new products that both target the same customer segments and are more likely to be technically similar to existing blockbuster products. This behavior, driven by an expectation of the stickiness of demand for existing product offerings, limits firms' incentives to invest in entirely new products targeting different customer segments. Our findings offer insights into how blockbuster products shape firms' customer segment and innovation choices, with implications for understanding the dynamics of technological change in R&D-intensive industries.</p>
-  </details>
-  <a href="https://www.nber.org/papers/w33957" target="_blank" rel="noopener noreferrer">NBER #33957</a>
-  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5086278" target="_blank" rel="noopener noreferrer">SSRN</a>
-</div>
-
-
-
-<br><br>
-<h2 style="color: #002147;">Publications</h2>
-
-<b>From Founders to Funders: Generalized Reciprocity and Embeddedness in Founders’ Transition to Angel Investing</b><br>
-<i>With Alessandro Piazza</i><br>
-<i>Forthcoming @ <b>Academy of Management Journal</b></i><br><br>
-
-<div class="paper-links">
-  <details class="abstract-link">
-    <summary>Abstract</summary>
-    <p>We examine how entrepreneurs transition to angel investing through the lens of generalized reciprocity and embeddedness. Using a multimethod approach combining archival analysis with three experiments, we reveal how psychological and social mechanisms shape this transition. We find that entrepreneurs who have received angel funding are more likely to become angel investors themselves, particularly when they share educational, professional, or geographic ties with their initial investors. While angel investors, like all investors, seek financial returns, we theorize that choosing angel investing over alternative investment vehicles reflects prosocial motivations rooted in reciprocity. Our mediation analyses demonstrate that gratitude, rather than reputation concerns, drives this initial transition. Furthermore, entrepreneurs who received embedded funding preferentially direct their investments toward entrepreneurs with whom they share embedded ties. This reveals a two-part process: emotional mechanisms drive the decision to become an angel investor, while structural embeddedness guides investment targeting. These findings integrate psychological accounts of generalized reciprocity with sociological perspectives on embeddedness, linking individual-level and structural explanations of prosocial behavior in economic contexts. Our study highlights how angel investing perpetuates itself through self-reinforcing cycles that create both opportunities and constraints for ecosystem development.</p>
-  </details>
-  <a href="https://osf.io/preprints/socarxiv/e6p4s_v1" target="_blank" rel="noopener noreferrer">OSF Preprint</a>
-</div>
-
-
-
-<!-- {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %} -->
-
-<!-- New style rendering if publication categories are defined -->
-<!-- {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %} -->
