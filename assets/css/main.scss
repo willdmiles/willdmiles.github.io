@@ -55,6 +55,44 @@ body {
   color: var(--site-ink);
 }
 
+body,
+button,
+input,
+select,
+textarea,
+.greedy-nav,
+.masthead,
+.sidebar,
+.page,
+.archive,
+.author__content,
+.author__urls,
+.notice,
+.btn,
+.pagination,
+.taxonomies,
+.page__meta,
+.archive__item,
+.archive__item-title,
+.archive__subtitle {
+  font-family: "Playfair Display", Georgia, Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+summary,
+figcaption,
+blockquote {
+  font-family: "Playfair Display", Georgia, Times, serif;
+}
+
 a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.14em;
