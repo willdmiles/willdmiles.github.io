@@ -113,6 +113,43 @@ a {
   letter-spacing: 0.01em;
 }
 
+.masthead__inner-wrap,
+.masthead__inner-wrap nav,
+.masthead__menu,
+.masthead__menu-item,
+.greedy-nav .visible-links,
+.greedy-nav .visible-links li,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links,
+.greedy-nav .hidden-links a,
+.breadcrumbs,
+.breadcrumbs ol,
+.breadcrumbs li,
+.pagination,
+.pagination ul,
+.pagination li,
+.pagination a,
+.pagination--pager,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6,
+.sidebar p,
+.sidebar li,
+.sidebar .author__name,
+.sidebar .author__bio,
+.sidebar .author__urls-wrapper,
+.sidebar .author__urls,
+.sidebar .author__urls a,
+.author__content,
+.author__urls-wrapper,
+.author__urls,
+.author__urls li,
+.author__urls a {
+  font-family: "Playfair Display", Georgia, Times, serif !important;
+}
+
 .author__avatar img {
   border: 4px solid var(--site-mist);
   box-shadow: 10px 10px 0 rgba(47, 59, 79, 0.08);
