@@ -75,7 +75,8 @@ textarea,
 .archive__item,
 .archive__item-title,
 .archive__subtitle {
-  font-family: "Playfair Display", Georgia, Times, serif;
+  font-family: "Neuton", Georgia, Times, serif;
+  font-weight: 300;
 }
 
 h1,
@@ -90,7 +91,20 @@ a,
 summary,
 figcaption,
 blockquote {
-  font-family: "Playfair Display", Georgia, Times, serif;
+  font-family: "Neuton", Georgia, Times, serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.greedy-nav a,
+.masthead__menu-item--lg a,
+.sidebar .author__name {
+  font-weight: 300 !important;
 }
 
 a {
@@ -147,7 +161,8 @@ a {
 .author__urls,
 .author__urls li,
 .author__urls a {
-  font-family: "Playfair Display", Georgia, Times, serif !important;
+  font-family: "Neuton", Georgia, Times, serif !important;
+  font-weight: 300 !important;
 }
 
 .author__avatar img {
