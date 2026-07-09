@@ -48,6 +48,7 @@
   --site-coral: #f26a45;
   --site-paper: #f7f5ef;
   --site-line: #d8e7eb;
+  --site-soft-shadow: 8px 8px 0 rgba(47, 59, 79, 0.05);
 }
 
 body {
@@ -125,6 +126,7 @@ a {
 .greedy-nav a,
 .masthead__menu-item--lg a {
   letter-spacing: 0.01em;
+  font-size: 1.05rem;
 }
 
 .masthead__inner-wrap,
@@ -176,6 +178,87 @@ a {
   color: var(--site-ink);
 }
 
+.page__title {
+  margin-bottom: 1.1rem;
+  font-size: 2rem;
+  letter-spacing: 0.01em;
+}
+
 .page__content {
   font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.page__content p {
+  max-width: 44rem;
+}
+
+#main > .page,
+#main > .archive {
+  max-width: 58rem;
+}
+
+.page__content a,
+.author__urls a,
+.paper-links a,
+.paper-links summary {
+  transition: color 0.18s ease, text-decoration-color 0.18s ease;
+}
+
+.page__content ul {
+  padding-left: 1.1rem;
+}
+
+.page__content li {
+  margin-bottom: 0.55rem;
+}
+
+.contact-links {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 32rem;
+}
+
+.contact-links li {
+  margin-bottom: 0.85rem;
+}
+
+.contact-links a {
+  display: block;
+  padding: 0.95rem 1.1rem;
+  color: var(--site-ink);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--site-line);
+  border-radius: 16px;
+  box-shadow: var(--site-soft-shadow);
+}
+
+.contact-links a:hover {
+  color: var(--site-coral);
+  border-color: rgba(242, 106, 69, 0.35);
+}
+
+.contact-links i {
+  color: var(--site-blue);
+}
+
+.contact-links a:hover i {
+  color: var(--site-coral);
+}
+
+.about-intro {
+  max-width: 46rem;
+}
+
+.about-intro p {
+  margin-bottom: 0.95rem;
+}
+
+@media (min-width: 925px) {
+  .page__content,
+  .archive {
+    padding-top: 0.3rem;
+  }
 }

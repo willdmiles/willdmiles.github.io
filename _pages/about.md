@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-Hello. I am William Miles, a fourth-year Ph.D. candidate in the Strategy group at Duke University's Fuqua School of Business. 
+<div class="about-intro">
+  <p>I am William Miles, a Ph.D. candidate in the Strategy group at Duke University's Fuqua School of Business.</p>
 
-My research interests lie in understanding how incentives, competition, and market structure impact experimentation and the direction and nature of technological innovations.
-
+  <p>My research examines how incentives, competition, and market structure shape experimentation and the direction of technological innovation.</p>
+</div>
