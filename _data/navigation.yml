@@ -24,5 +24,8 @@ main:
     url: /files/cv.pdf
     # url: ../../../Documents/03 Professional/CV/cv.pdf
 
+  - title: "Contact"
+    url: /contact/
+
   # - title: "Guide"
   #   url: /markdown/
