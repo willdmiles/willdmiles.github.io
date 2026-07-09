@@ -21,24 +21,8 @@ author_profile: false
     color: var(--site-ink);
   }
 
-  .research-intro {
-    margin: 0 0 1.8rem;
-    padding: 1.4rem 1.55rem;
-    background: linear-gradient(135deg, rgba(216, 238, 241, 0.7), rgba(247, 245, 239, 0.95));
-    border: 1px solid var(--site-line);
-    border-radius: 20px;
-    box-shadow: 12px 12px 0 rgba(47, 59, 79, 0.06);
-  }
-
-  .research-intro p {
-    margin: 0;
-    max-width: 42rem;
-    font-size: 1.08rem;
-    line-height: 1.7;
-  }
-
   .research-section {
-    margin-top: 1.8rem;
+    margin-top: 1.25rem;
   }
 
   .research-section h2 {
@@ -125,9 +109,9 @@ author_profile: false
 
   .paper-links a::before,
   .paper-links summary::before {
-    content: "\2192";
+    content: "\2197";
     margin-right: 0.32rem;
-    color: var(--site-coral);
+    color: currentColor;
   }
 
   .paper-links summary::-webkit-details-marker {
@@ -136,12 +120,8 @@ author_profile: false
 
   .paper-links a:hover,
   .paper-links summary:hover {
-    color: var(--site-ink);
-    text-decoration: underline;
-  }
-
-  .paper-card.working-paper .paper-links summary:hover {
     color: var(--site-coral);
+    text-decoration: underline;
   }
 
   .paper-links details.abstract-link p {
@@ -154,7 +134,6 @@ author_profile: false
   }
 
   @media (max-width: 767px) {
-    .research-intro,
     .paper-card {
       padding: 1rem;
       box-shadow: 6px 6px 0 rgba(47, 59, 79, 0.05);
@@ -167,10 +146,6 @@ author_profile: false
 </style>
 
 <div class="research-page">
-  <div class="research-intro">
-    <p>I study how incentives, competition, and market structure shape experimentation and the direction of innovation. My work focuses especially on how organizations search, learn, and allocate effort under uncertainty.</p>
-  </div>
-
   <section class="research-section">
     <h2>Working Papers</h2>
     <div class="research-grid">
